@@ -33,7 +33,7 @@ img {border:none;}
 /*小导航*/
 .min-nav{
 	height:60px;
-	background: pink;
+	background: #168bd8;
 	line-height: 60px;
 
 }
@@ -278,7 +278,6 @@ img {border:none;}
 	}
 	.screen-center{
 		
-
 		margin:236px auto 0px;
 
 		position: relative;
@@ -441,6 +440,9 @@ img {border:none;}
 @media screen and (max-width:767px){ 
   .zbcj{
   	display: none;
+  }
+  .screen-center{
+  	margin-top: 30%;
   }
   .login{
   	position: absolute;
