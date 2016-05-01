@@ -1,0 +1,334 @@
+body,h1,h2,h3,h4,h5,h6,form,input,ul,ol,li{margin:0;padding:0;list-style:none;}
+*{font-family:"微软雅黑","宋体";color:#ccc}
+a{text-decoration:none;}
+img {border:none;}
+/*头部导航开始*/
+*{
+	box-sizing:border-box;
+}
+.clf{
+	content:"";
+	display: block;
+	height:0;
+	line-height: 0;
+	font-size: 0;
+	clear: both;
+}
+.header{
+	width: 100%;
+	height: 60px;
+	background: #168bd8;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index: 2;
+}
+.nav{
+	max-width:1000px;
+	height: 60px;
+	margin:0 auto;
+	/*background: pink;*/
+	/*overflow: hidden;*/
+}
+/*小导航*/
+.min-nav{
+	height:60px;
+	background: pink;
+	line-height: 60px;
+
+}
+.min-nav li{
+	display: inline-block;
+}
+.min-nav-list{
+	 height: 100%;
+    margin: 0 auto;
+    line-height: 44px;
+    overflow: hidden;
+    text-align: justify;
+    position: relative;
+    padding:0px 15px;
+}
+ .min-nav .min-nav-list:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+  }
+.max-nav{
+	 height: 100%;
+    margin: 0 auto;
+    line-height: 60px;
+    /*overflow: hidden;*/
+    text-align: justify;
+    padding:0px 15px;
+    min-width:767px;
+
+   
+    /*padding:0px 15px;*/
+}
+ .max-nav .max-nav-list:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+  }
+
+.nav-left{
+	display: inline-block;
+	float: left;
+}
+.nav-left li{
+	display: inline-block;
+
+}
+
+.nav-left-list li a{
+    display: inline-block;
+    padding: 0px 25px 0px;
+    font-size: 15px;
+    /*height: 28px;*/
+    margin-top: 10px;
+  
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.nav-left-list li a:hover{
+	opacity: 0.8
+}
+.nav-right{
+	display: inline-block;
+	float: right;
+	margin-top:10px;
+	
+}
+.nav-right li{
+	display: inline-block;
+}
+.nav-right li a{
+	color: #fff;
+	line-height: 60px;
+    font-size: 12px;
+    padding: 0 10px;
+   
+}
+.nav-right li:last-child a{
+	    color: #FFDA28;
+}
+.nav-right ul li a>i{
+    background-image:url(../img/header_z_94c6de7.png);
+     background-position: -88px -154px;
+      display: inline-block;
+    width: 32px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+/*导航响应式*/
+/*大屏*/
+@media screen and (min-width:767px) {
+
+	.min-nav{
+		display:none;
+	}
+	.nav-logo{
+	display:inline-block;
+	
+    width: 120px;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background: url(../img/header_z_94c6de7.png) ;
+   background-position: -2px 0px;
+}
+ .nav-left-list{
+	display: block!important;
+}
+	
+}
+/*小屏*/
+@media screen and (max-width:767px){
+
+	.min-nav {
+    max-width: 767px;
+    height: 60px;
+    
+    display: block!important;
+  }
+ .nav-right{
+ 	display: none;
+ }
+ .nav-left li{
+     display: block;
+     line-height: 40px;
+
+ } 
+ .nav-left-list{
+ 	 display: none;
+
+
+ 	 
+ }
+
+ .nav-left-list li a{
+   padding:0;
+ 	  text-align: left;
+ 	 
+ }
+ .nav-logo{
+     display: none;
+ }
+ .nav-logo2{
+	display:inline-block;
+	
+    width: 120px;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background: url(../img/header_z_94c6de7.png) ;
+   background-position: -2px 0px;
+}
+  
+}
+
+/*头部导航结束*/
+/*第一屏开始*/
+.screen1{
+		width:100%;	
+		height: 100%;
+		background: url(../img/bg1.jpg);
+		position: relative;
+		
+	}
+.screen1-top{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 4000px;
+	height: 1000px;
+	animation:moveCloud 20s linear infinite;
+}	
+.bg-cloud1{
+	
+    width: 1000px;
+    height: 1000px;
+    float: left;
+    background: url(../img/cloud_1_1d4924b.png) no-repeat;
+}
+.screen1-middle{
+	position: absolute;
+	left:0;
+	top:40%;
+	width: 4000px;
+	height: 1000px;
+	animation:moveCloud 40s linear infinite;
+}	
+.bg-cloud2{
+	
+    width: 1000px;
+    height: 1000px;
+    float: left;
+    background: url(../img/cloud_2_a186193.png) repeat;) no-repeat;
+}
+.screen1-bottom{
+	position: absolute;
+	left:0;
+	bottom:0;
+	width: 4000px;
+	height: 400px;
+	
+	animation:moveCloud 100s linear infinite;
+}	
+.bg-cloud3{
+	
+    width: 1000px;
+    height: 1000px;
+    float: left;
+
+    background:url(../img/cloud_3_5ee0340.png) no-repeat
+}
+@keyframes moveCloud{
+		100%{transform:translateX(-25%)};
+	}
+	.screen-footer{
+		width: 100%;
+		height: 126px;
+		background:url(../img/bg2.jpg);
+		position: absolute;
+		bottom:0;
+		left:0;
+	}
+
+	.screen-footer a{
+	    display: block;
+	    width: 30px;
+	    height: 26px;
+	    background: url(../img/arrow_aad9b25.png);
+	    position: absolute;
+	    left: 50%;
+	    bottom:45px;
+	    margin-left:-15px;
+	    /*animation:fj 2s ease-out infinite alternate;*/
+	}
+	.screen-center{
+		width: 1000px;
+		margin:236px auto 0px;
+
+		position: relative;
+	}
+	.zbcj{
+	width: 501px;
+    height: 158px;
+    background: url(../img/launch_deea86c.png);
+    left: 0;
+    top: -210px;
+	}
+	.obj-light{
+		position: absolute;
+		top:0px;
+		left: 295px;
+		width: 119px;
+		height: 78px;
+		background: url(../img/flight_ade8ee2.png);
+		animation:fj 1s ease-out infinite alternate;
+	}
+	@keyframes fj{
+		
+		100%{
+			transform:translateY(15px);
+		}
+	}
+	@keyframes jt{
+		
+		100%{
+			transform:translateY(1px);
+		}
+	}
+/*第一屏结束*/
+	.screen2{
+		width:100%;	
+		height: 100%;
+		background: url(../img/bg2.jpg);
+		position: relative;
+		
+	}
+	.screen3{
+		width:100%;	
+		height: 100%;
+		background: url(../img/bg-2_867b7b4.jpg);
+		position: relative;
+	
+	}
+	.screen4{
+		width:100%;	
+		height: 100%;
+		background: url(../img/bg-3_153a003.jpg);
+		position: relative;
+		
+	}

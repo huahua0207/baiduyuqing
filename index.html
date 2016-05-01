@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>百度舆情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+    
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="header">
+                    <div class="nav">
+                      <!--小导航开始-->
+                      <div class="min-nav">
+                           <ul class="min-nav-list">
+                            <li>
+                                <a href="#"><i class=" iconfont meau">&#xe647;</i></a>
+                              </li>
+                              <li>
+                                <a href="#" class="nav-logo2"></a>
+                            </li>
+                           </ul>
+                          
+                      </div>
+                      <!--小导航结束-->
+                      <!--大导航开始-->
+                      <div class="max-nav">
+                        <ul class="max-nav-list">
+                        <a href="#" class="nav-logo"></a>
+                        <div class="nav-left">
+                            <ul class="nav-left-list">
+                                <li><a href="#">首页</a></li>
+                                <li><a href="#">产品介绍</a></li>
+                                <li><a href="#">用户版</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-right">
+                            <ul>
+                                <li><a href="#">手机客户端
+                                    <i></i>
+                                </a></li>
+                                <li><a href="#">百度司南 </a></li>
+                                <li><a href="#">联系我们</a></li>
+                                <li><a href="#">申请试用</a></li>
+                            </ul>
+                        </div>
+                      </ul>
+                      </div>
+                      <!--大导航结束-->
+                    </div>
+                </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                
+                <div class="screen1">
+                      <div class="screen1-top">
+                          <div class="bg-cloud1"></div>
+                          <div class="bg-cloud1"></div>
+                          <div class="bg-cloud1"></div>
+                          <div class="bg-cloud1"></div>
+                      </div>
+                      <div class="screen1-middle">
+                          <div class="bg-cloud2"></div>
+                          <div class="bg-cloud2"></div>
+                          <div class="bg-cloud2"></div>
+                          <div class="bg-cloud2"></div>
+                      </div>
+                      <div class="screen1-bottom">
+                          <div class="bg-cloud3"></div>
+                          <div class="bg-cloud3"></div>
+                          <div class="bg-cloud3"></div>
+                          <div class="bg-cloud3"></div>
+                      </div>
+                      <div class="screen-footer">
+                         
+                              <a href="#"></a>
+                         
+                      </div>
+                      <div class="screen-center">
+                          <div class="login"></div>
+                          <div class="zbcj"></div>
+                          <div class="obj-light"></div>
+                      </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="screen2"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="screen3"></div>
+            </div>
+            <div class="swiper-slide"><div class="screen4"></div></div>
+            
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        direction: 'vertical',
+        slidesPerView: 1,
+        paginationClickable: true,
+        mousewheelControl: true
+    });
+    </script>
+</body>
+</html>
